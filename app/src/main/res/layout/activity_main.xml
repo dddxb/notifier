@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.MainActivity" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow >
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="账号："/>
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的ID"/>
+        </TableRow>
+        <TableRow >
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="URL："/>
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="请输入URL"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:onClick="Click"/>
+
+
+
+</LinearLayout>
